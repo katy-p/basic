@@ -1,8 +1,16 @@
+import katy.Adder
+
 object Main {
   def main(args: Array[String]): Unit = {
     println("Hello, world!")
 
-    val four: Int = 2+2
+    val am: Adder = new Adder
+
+
+
+    val four: Int = am.add(2,2)
+
+    println(s"""Four = "$four" """)
 
     for {
       elem <- args
